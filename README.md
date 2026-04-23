@@ -65,15 +65,6 @@ O projeto está disponível em:
 
 ---
 
-## 📸 Prévia do projeto
-
-```
-![Página inicial](legacy/page1.png)
-![Outra seção](legacy/page2.png)
-```
-
----
-
 ## 🎯 Objetivo
 
 * Divulgar o projeto Meninas na Ciência IFB
