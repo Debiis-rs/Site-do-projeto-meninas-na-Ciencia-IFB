@@ -1,5 +1,5 @@
 body {
-    background-image: url('assets/img_fundo.png');
+    background-image: url('../assets/img_site/img_fundo.png');
     text-align: center;
     padding: 20px;
     height: 100vh;

@@ -7,7 +7,7 @@ body {
 
 }
 #inicio {
-  background-image: url('assets/img_fundo.png'); 
+  background-image: url('../assets/img_site/img_fundo.png'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
 }
 #quem-somos {
-background-image: url('assets/img_fundo.png'); 
+background-image: url('../assets/img_site/img_fundo.png'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -35,7 +35,7 @@ background-image: url('assets/img_fundo.png');
   min-height: 10vh;
 }
 #participar, #encontros {
-  background-image: url('assets/img2_fundo.png'); 
+  background-image: url('../assets/img_site/img2_fundo.png'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
