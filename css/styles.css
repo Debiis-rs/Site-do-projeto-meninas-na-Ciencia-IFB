@@ -1,132 +1,197 @@
-body {
-  margin-top: 80px; 
-  
-  text-align: center;
+/****** RESET ******/
+* {
+  margin: 0;
   padding: 0;
-  height: 100vh; 
-
-}
-#inicio {
-  background-image: url('../assets/img_site/img_fundo.png'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-  background-attachment: fixed;
-  padding: 40px 0;
-  min-height: 100vh;
-}
-#quem-somos {
-background-image: url('../assets/img_site/img_fundo.png'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-  background-attachment: fixed;
-  padding: 40px 0;
-  min-height: 100vh;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-#projetos,#img-mnc,#faq {
-  background-color: white;
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-  background-attachment: fixed;
-  padding: 40px 0;
-  min-height: 10vh;
-}
-#participar, #encontros {
-  background-image: url('../assets/img_site/img2_fundo.png'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-  background-attachment: fixed;
-  padding: 40px 0;
-  min-height: 100vh;
-}
-
-.moldura-foto {
-  width: 470px;
-  height: 260px;
-  margin: 0 auto;
-  border-radius: 50% / 50%; 
-  overflow: hidden;
-  border: 5px solid white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.img-meninas {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0; 
-}
-
-
-.ativo {
-    color: white !important; 
-    border-bottom: 2px solid #ff0066;
-}
-
-h1 {
-  font-family:'Black Ops One', cursive;
-  font-size: 3em; 
-  margin-bottom: 20px; 
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color:#ff0066;
-}
-nav {
-  position: fixed;           
-  top: 0;                    
+/****** HEADER & NAV ******/
+header {
+  background-color: var(--bg-nav-orchid);
+  height: 95px;
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;                  
-  background-color:darkslateblue ;    
-  z-index: 1000;            
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  right: 0;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+}
+
+#img-logo {
+  height: 75px;
 }
 
 nav ul {
-  display: flex;             
-  justify-content: center;   
-  list-style: none;          
-  padding: 0;               
-  margin: 0;
-  gap: 30px;                
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 nav a {
-  display: block;
-  padding: 15px 10px;        
-  text-decoration: none;
-  color: rgb(212, 185, 255);            
+  padding: 15px 10px;
+  color: var(--text-main);
+  text-align: center;
+  font: var(--font-weight-bold) var(--font-size-xl) var(--font-family-base);
 }
 
 nav a:hover {
-  color: white;          
+  color: var(--heading-main);
+}
+
+/****** MAIN INICIO ******/
+#inicio {
+  background-image: url('../assets/img_site/bg-01.png');
+  background-size: cover;
+  padding: 50px 0 70px;
+  min-height: 85vh;
+  margin-top: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font: var(--font-weight-normal) var(--font-size-display) var(--font-family-heading);
+  color: var(--heading-main);
+}
+
+.atomo-svg {
+  color: var(--icon-atomo);
+}
+
+#inicio .atomo-svg {
+  position: absolute;
+  top: 20%;
+  right: 33%;
+  transform: rotate(23deg);   /* rotaciona o icon em 23 graus */
+  z-index: 0;
+}
+
+#img-main-girls {
+  margin-top: 45px;
+}
+
+/****** SECTION IMG MNC ******/
+section {
+  min-height: 90vh;
+  padding: 70px 100px;
+}
+
+#img-mnc,
+#projetos,
+#faq {
+  background-color: var(--bg-main-white);
+}
+
+#img-mnc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-mnc-girls {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+#icon-laptop {
+  width: 170px;
+  max-height: 200px;
+  position: absolute;
+  top: 162%;
+  right: 15%;
+  z-index: 0;
+}
+
+#img-mnc .atomo-svg {
+  position: absolute;
+  top: 106%;
+  left: 16%;
+  z-index: 0;
+}
+
+/****** SECTION QUEM SOMOS ******/
+#quem-somos {
+  background-image: url('../assets/img_site/bg-02.png');
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+#quem-somos .atomo-svg {
+  position: absolute;
+  top: 196%;
+  left: 10%;
+  transform: rotate(23deg);   /* rotaciona o icon em 23 graus */
+  z-index: 0;
+}
+
+#quem-somos h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 600px;
 }
 
 p {
-  font-size: 1.2em; 
-  line-height: 1.5; 
-  margin: 20px auto; 
-  max-width: 600px; 
-  color: black;
+  font: var(--font-weight-normal) var(--font-size-lg) var(--font-family-base);
+  line-height: 1.5;
+  max-width: 600px;
+  color: var(--text-muted);
   text-align: justify;
+  text-indent: 30px;
+  margin-bottom: 20px;
 }
-button {
+
+#quem-somos-img {
+  display: flex;
+  align-items: center;
+}
+
+#img-somos-girls {
+  width: 450px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 50% 50% 0 0 / 40% 40% 0 0;
+}
+
+/* #participar,
+#encontros {
+  background-image: url('../assets/img_site/img2_fundo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 40px 0;
+  min-height: 100vh;
+} */
+
+
+
+/* button {
   padding: 10px 20px;
   font-size: 1em;
   color: rgb(255, 255, 255);
-  background-color:plum; 
+  background-color: plum;
   border: none;
   border-radius: 40px;
   cursor: pointer;
-}
-.participantes {
-  transition: all 0.3s ease;
-}
+} */
 
-.participantes:hover {
+/* .participantes {
+  transition: all 0.3s ease;
+} */
+
+/* .participantes:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); 
-}
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+} */

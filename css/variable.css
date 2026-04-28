@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    /****** VALORES PRIMITIVOS (somente valores das cores) ******/
+    --color-pure-black: #000000;
+    --color-pure-white: #ffffff;
+    --color-pale-lavender: #EDCBF6;
+    --color-vibrant-orchid: #CB6CE6;
+    --color-cerise-pink: #E00057;
+    --color-deep-plum: #7C528B;
+
+    /****** VALORES SEMÂNTICOS (cor com função) ******/
+    --bg-main-lavender: var(--color-pale-lavender);
+    --bg-main-white: var(--color-pure-white);
+    --bg-nav-orchid: var(--color-vibrant-orchid);
+    /* texto padrão preto */
+    --text-main: var(--color-pure-black);
+    /* texto com menor destaque */
+    --text-muted: var(--color-deep-plum);
+    /* texto em fundo escuro */
+    --text-inverse: var(--color-pure-white);
+    /* titulo principal */
+    --heading-main: var(--color-cerise-pink);
+    /* titulo em fundo escuro */
+    --heading-inverse: var(--color-pure-white);
+    --icon-atomo: var(--color-deep-plum);
+
+    /****** TIPOGRAFIA ******/
+    --font-family-base: "DM Sans", sans-serif;
+    --font-family-heading: "Bungee", sans-serif;
+
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-display: 4rem;  /* 64px */
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /****** ESPAÇAMENTO ******/
+    --spacing-1: 0.25rem;
+    /* 4px */
+    --spacing-2: 0.5rem;
+    /* 8px */
+    --spacing-3: 0.75rem;
+    /* 12px */
+    --spacing-4: 1rem;
+    /* 16px */
+    --spacing-6: 1.5rem;
+    /* 24px */
+    --spacing-8: 2rem;
+    /* 32px */
+
+    /****** BORDAS E SOMBRAS ******/
+    --shadow-md: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
