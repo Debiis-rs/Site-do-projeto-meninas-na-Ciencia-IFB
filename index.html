@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img_site/img_logo.png">
     <title>Site-Meninas-na-Ciência</title>
     
 </head>
@@ -20,11 +21,15 @@
         </ul>
     </nav>
 
-    <main id="inicio">
-        <h1> Meninas </h1>
-        <h1>na Ciência-IFB</h1> <br><br><br><br>
-        <img src="assets/img_site/meninas_na_ciencia.jpeg" alt="Meninas na Ciência" class="img-meninas">
-    </main>
+<main id="inicio" class="hero-section">
+    <div class="container">
+        <h1 class="titulo-principal">Meninas <br><span>na Ciência-IFB</span></h1>
+        <div class="moldura-foto">
+            <img src="assets/img_site/meninas_na_ciencia.jpeg" alt="Meninas na Ciência" class="img-meninas">
+        </div>
+    </div>
+</main>
+
     <br><br><br><br><br><br>
     <section id="img-mnc">
         <img src="assets/img_site/mnc.jpeg" alt="Meninas na Ciência - confraternização" class="img-meninas2">
@@ -59,14 +64,35 @@
     <br><br><br>
     <section id="faq">
         <h1>FAQ</h1> <br>
-        <p><strong>Quem pode participar do Meninas na Ciência?</strong><br>
-        O Meninas na Ciência é aberto a todas as meninas e mulheres interessadas em explorar as áreas de STEAM. Não é necessário ter experiência prévia, apenas vontade de aprender e se envolver!</p>
-        <br><br>
-        <p><strong>Quais são os requisitos para participar?</strong><br>
-        Para participar, basta ser docente/discente do IFB e preencher o formulário de inscrição disponível em nosso site. Não há requisitos específicos, apenas o interesse em aprender e se envolver nas atividades do grupo.</p>
-        <br><br>
-        <p><strong>Quais são os benefícios de participar do Meninas na Ciência?</strong><br>
-        Participar do Meninas na Ciência oferece a oportunidade de aprender sobre ciência, tecnologia, engenharia, artes e matemática, além de desenvolver habilidades práticas, fazer networking com outras meninas e mulheres interessadas nessas áreas e se inspirar com palestras e atividades colaborativas. É uma ótima maneira de expandir seus horizontes e se envolver em uma comunidade de apoio!</p>
+
+        <div class="faq-item">
+            <div class="pergunta-faq">
+                <p><strong>Quem pode participar do Meninas na Ciência?</strong></p>
+            </div>
+            <div class="resposta-faq" style="display: none;">    
+                <p>O Meninas na Ciência é aberto a todas as meninas e mulheres interessadas em explorar as áreas de STEAM. Não é necessário ter experiência prévia, apenas vontade de aprender e se envolver!</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="pergunta-faq">        
+                    <p><strong>Quais são os requisitos para participar?</strong></p>
+                </div>
+                <div class="resposta-faq" style="display: none;">
+                    <p>Para participar, basta ser docente/discente do IFB e preencher o formulário de inscrição disponível em nosso site. Não há requisitos específicos, apenas o interesse em aprender e se envolver nas atividades do grupo.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="pergunta-faq">
+                    <p><strong>Quais são os benefícios de participar do Meninas na Ciência?</strong></p>
+                </div>
+                <div class="resposta-faq">
+                    <p>Participar do Meninas na Ciência oferece a oportunidade de aprender sobre ciência, tecnologia, engenharia, artes e matemática, além de desenvolver habilidades práticas, fazer networking com outras meninas e mulheres interessadas nessas áreas e se inspirar com palestras e atividades colaborativas. É uma ótima maneira de expandir seus horizontes e se envolver em uma comunidade de apoio!</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
