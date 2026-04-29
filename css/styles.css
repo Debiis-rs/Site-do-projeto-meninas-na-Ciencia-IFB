@@ -7,6 +7,7 @@
   list-style: none;
 }
 
+
 /****** HEADER & NAV ******/
 header {
   background-color: var(--bg-nav-orchid);
@@ -34,14 +35,15 @@ nav ul {
 
 nav a {
   padding: 15px 10px;
+  font: var(--font-weight-bold) var(--font-size-xl) var(--font-family-base);
   color: var(--text-main);
   text-align: center;
-  font: var(--font-weight-bold) var(--font-size-xl) var(--font-family-base);
 }
 
 nav a:hover {
   color: var(--heading-main);
 }
+
 
 /****** MAIN INICIO ******/
 #inicio {
@@ -53,8 +55,6 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  overflow: hidden;
 }
 
 h1 {
@@ -68,7 +68,7 @@ h1 {
 
 #inicio .atomo-svg {
   position: absolute;
-  top: 20%;
+  top: 32%;
   right: 33%;
   transform: rotate(23deg);   /* rotaciona o icon em 23 graus */
   z-index: 0;
@@ -78,10 +78,11 @@ h1 {
   margin-top: 45px;
 }
 
+
 /****** SECTION IMG MNC ******/
 section {
   min-height: 90vh;
-  padding: 70px 100px;
+  padding: 70px 180px;
 }
 
 #img-mnc,
@@ -120,6 +121,7 @@ section {
   z-index: 0;
 }
 
+
 /****** SECTION QUEM SOMOS ******/
 #quem-somos {
   background-image: url('../assets/img_site/bg-02.png');
@@ -131,7 +133,7 @@ section {
 #quem-somos .atomo-svg {
   position: absolute;
   top: 196%;
-  left: 10%;
+  left: 12%;
   transform: rotate(23deg);   /* rotaciona o icon em 23 graus */
   z-index: 0;
 }
@@ -144,10 +146,10 @@ section {
 
 p {
   font: var(--font-weight-normal) var(--font-size-lg) var(--font-family-base);
-  line-height: 1.5;
-  max-width: 600px;
   color: var(--text-muted);
   text-align: justify;
+  max-width: 600px;
+  line-height: 1.5;
   text-indent: 30px;
   margin-bottom: 20px;
 }
@@ -164,6 +166,107 @@ p {
   border-radius: 50% 50% 0 0 / 40% 40% 0 0;
 }
 
+
+/****** SECTION EVENTOS ******/
+#eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+#eventos .atomo-svg {
+  position: absolute;
+  top: 300%;
+  left: 16%;
+  transform: rotate(23deg);   /* rotaciona o icon em 23 graus */
+  z-index: 0;
+}
+
+#eventos h1 {
+  margin-bottom: 50px;
+  color: var(--heading-accent);
+}
+
+.eventos-container {
+  display: flex;
+  gap: 50px;
+}
+
+.eventos-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-card-plum);
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  padding: 44px 33px;
+}
+
+.eventos-img {
+  width: 83px;
+  height: 83px;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#eventos h2 {
+  font: var(--font-weight-bold) var(--font-size-2xl) var(--font-family-heading);
+  color: var(--heading-inverse);
+  margin: 25px 0 15px;
+}
+
+#eventos p {
+  font-size: var(--font-size-sm);
+  color: var(--text-main);
+  text-align: justify;
+  text-indent: 0;
+}
+
+
+/****** SECTION PROJETOS ******/
+#projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/img_site/bg-03.png');
+  background-size: cover;
+}
+
+#projetos .atomo-svg {
+  position: absolute;
+  top: 400%;
+  left: 22%;
+  transform: rotate(23deg);   /* rotaciona o icon em 23 graus */
+  z-index: 0;
+}
+
+#projetos h1 {
+  margin-bottom: 30px;
+}
+
+#projetos p {
+  max-width: 620px;
+}
+
+#projetos a {
+  margin-top: 15px;
+}
+
+button {
+  background-color: var(--button-bg);
+  font: var(--font-weight-normal) var(--font-size-lg) var(--font-family-base);
+  color: var(--text-main);
+  padding: 15px 25px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+
 /* #participar,
 #encontros {
   background-image: url('../assets/img_site/img2_fundo.png');
@@ -175,17 +278,6 @@ p {
   min-height: 100vh;
 } */
 
-
-
-/* button {
-  padding: 10px 20px;
-  font-size: 1em;
-  color: rgb(255, 255, 255);
-  background-color: plum;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-} */
 
 /* .participantes {
   transition: all 0.3s ease;
