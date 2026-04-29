@@ -1,0 +1,77 @@
+body {
+    background-image: url('../assets/img_site/img_fundo.png');
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+
+}
+h1 {
+  font-family:'Black Ops One', cursive;
+  font-weight: 600;
+  color: #ff0066;
+}
+p {
+  font-size: 1.2em; 
+  line-height: 1.5; 
+  margin: 20px auto; 
+  max-width: 600px; 
+  color: black;
+  text-align: center;
+}
+form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3%;
+  border-radius: 8%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  color:#ff0066;
+}
+
+.container {
+  animation: fadeScale 0.6s ease;
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  transform: scale(1.01);
+  border-color: #c084fc;
+  box-shadow: 0 0 5px #c084fc;
+}
+button {
+  background: linear-gradient(135deg, #d291ff, #c084fc);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(192, 132, 252, 0.4);
+}
+
+button:active {
+  transform: scale(0.95);
+}
