@@ -13,17 +13,18 @@
     --bg-main-lavender: var(--color-pale-lavender);
     --bg-main-white: var(--color-pure-white);
     --bg-nav-orchid: var(--color-vibrant-orchid);
-    /* texto padrão preto */
-    --text-main: var(--color-pure-black);
+    --bg-card-plum: var(--color-deep-plum);
+    /* texto padrão brannco */
+    --text-main: var(--color-pure-white);
     /* texto com menor destaque */
     --text-muted: var(--color-deep-plum);
-    /* texto em fundo escuro */
-    --text-inverse: var(--color-pure-white);
     /* titulo principal */
     --heading-main: var(--color-cerise-pink);
     /* titulo em fundo escuro */
     --heading-inverse: var(--color-pure-white);
+    --heading-accent: var(--color-deep-plum);
     --icon-atomo: var(--color-deep-plum);
+    --button-bg: var(--color-deep-plum);
 
     /****** TIPOGRAFIA ******/
     --font-family-base: "DM Sans", sans-serif;
